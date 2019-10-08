@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>인풋태그 예제</title>
+</head>
+<body>
+<form action="">
+    <!-- type은 ""와 ''중 하나를 이용해서 사용 
+    html 에서는 ""을 주로 이용하여 사용한다
+    따음표로 시작하면 따음표로 끝내고 쌍따움표로 시작하면 쌍따움으로 끝내야지
+    따움표로 시작했는데 쌍따움표로 끝내면 원하는 결과를 보지못한다.
+    placeholder은 미리 문자열을 보여주는것이다 -->
+    <!-- 모든 태그에서 name은 중복가능 id는 중복이 불가능하기 때문에 
+    중복id를 할수있는 태그가있으면 하나만 인식
+    input에서 사용하는 name은 서버에서 보내지는 이름이다 -->
+    input text 예제
+    <br>
+    <input type="text" placeholder="아이디" name="ID" required>
+    <input type="text" name="" id="" readonly><br>
+
+    <!-- submit은 서버로 데이터를 보내기위한 버튼이다
+    버튼은 단순한 버튼이다. reset은 모든 값들을 초기화하는 버튼이다.
+    버튼 태그로 대체가 가능하다. 단 인풋태그에 버튼들은 단일 태그이지만 버튼태그는
+    쌍 태그이다. 타입을 선택을 안하여도 자동 submit으로 되고 폼 밖에있다면 버튼으로 된다.
+    -->
+    
+    <br>input 태그를 이용한 버튼 예제 <br>
+    <input type="submit" value="제출">
+    <input type="button" value="버튼">
+    <input type="reset" value="초기화"> <br>
+    <br> button 태그를 이용한 예제 <br>
+    <button>제출</button>
+    <button>버튼</button>
+    <button>초기화</button><br>
+    <br> type를 지정한 버튼 태그 예제 <br>
+    <button>제출</button> <br>
+    <br> 체크 박스 예제<br>
+    당신이 좋아하는 과일은?(다중 선택 가능) <br>
+    <input type="checkbox" name=""value"apple">사과
+    <input type="checkbox" name=" "value"orang">오렌지<br>
+    <br> color 태그를 이용한 예제 <br>
+    <input type="color" name="" id=""><br>
+    <br> 시간 태그를 이용한 예제<br>
+    <input type="month" name="" id=""><br>
+    <input type="week" name="" id=""><br>
+    <input type="date" name="" id=""><br>
+    <input type="datetime-local" name="" id=""><br>
+    <input type="time" name="" id=""><br>
+    <br> 이메일 태그 예제<br>
+    <input type="email" name="email" id=""><br>
+    <input type="file" name="file" id=""><br>
+    <br> 히든 예제 : 안보이지만 input 태그가 있습니다. <br>
+    <input type="hidden" name="123"><br>
+    <br>이미지 에제 <br>
+    <input type="image" src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwifv6aQ84vlAhVP_GEKHSgwAZcQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttp%253A%252F%252Fwww.foodnmed.com%252Fnews%252FarticleView.html%253Fidxno%253D18296%26psig%3DAOvVaw2Alt1ulRIibaBSRCXlc4F8%26ust%3D1570597740144566&psig=AOvVaw2Alt1ulRIibaBSRCXlc4F8&ust=1570597740144566" alt="그림없음"><br>
+    <br>number 예제 <br>
+    <input type="number" name="" id=""><br>
+    <br>비밀번호 예제<br>
+    <input type="password" name="" id=""><br>
+    <br>라디오 예제 <br>
+    <input type="radio" name="gender"" value="m" checked id="pepe" >
+    <label for="pepe">남자</label>
+    <input type="radio" name="gender"" value="w" id="eoeo">
+    <label for="eoeo">여자</label><br>
+    <br>url 예제 <br>
+    <input type="url" ><br>
+    <!-- 유효성검사는 검사하려는 문자열이 원하는 패턴인지 아닌지 확인하는 과정을 유효성검사라고한다.
+    기본 유효성검사는 input태그에 url이나 Email이 있다.
+    기타 방법으로는 제이쿼리 방법과 자바스트립트를 이용한 방법이 있다. -->
+    <br> search 예제 <br>
+    <input type="search" ><br>
+    <br> range 예제 <br>
+    <input type="range" name="" id=""><br>
+
+</form>
+</body>
+</html>
