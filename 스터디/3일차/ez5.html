@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가상 선택자</title>
+    <style>
+        a:link{
+            color: red;
+        }
+    a:visited{
+        color: green;
+    }
+    a:hover{
+        background-color: gray;
+    }
+    input:focus{
+        color: darkblue;
+    }
+    input:active{
+        background-color: darkgoldenrod;
+    }
+    input:first-child{
+        background-color: red;
+    }
+    li:first-child{
+        color: red;
+    }
+    li:nth-child(2n-1){
+        text-decoration: chartreuse;
+    }
+    h1:before{
+        content: "앞:";
+    }
+    h1:after{
+        content: ":뒤";
+    }
+    text::after{
+        content: "";
+        clear: both;
+        display: "block";
+    }
+    /* 홀수번째 항목마다 css 적용 */
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.naver123.com/">네이버</a>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <ul>
+    <li>사과</li>
+    <li>배</li>
+    <li>포도</li>
+    </ul>
+    <h1>안녕</h1>
+
+</body>
+</html>
