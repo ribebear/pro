@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>속성 선택자</title>
+    <style>
+      input[type="text"]{
+          color: red;
+      }
+      a[href^="mailto"]{
+            color: lime;
+      }
+      a[href^="tel"]{
+          color: blue;
+      }
+      input[class~="pw"]{
+          color: yellow;
+      }
+      /* a태그 href 값에 mailto태그로 시작되는 경우 
+      a태그의 fref 값에 tel으로 시작되는경우
+      input태그의 class에 pw를 포함하는 경우*/
+      /*  */
+      
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <input type="password" class="pw" >
+    <input type="button" value="버튼">
+    <a href="mailto:beanje2712@naver.com">메일</a>
+    <a href="tel:010:6380:0615">번호</a>
+</body>
+</html>
