@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>목록 스타일</title>
+    <style>
+    ul.nav{
+        list-style-type:disc;
+    }
+    ul.nav ul{
+        list-style-type:square ;
+    }
+    .f{list-style-position: outside;}
+    .d{list-style-position: inside;}
+    #img{
+        list-style-image: url("mark.jpg");
+    }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">과일</a></li>
+            <ul>
+                <li><a href="#" class="d">사과</a> </li>
+                <li><a href="#" class="d">포도</a></li>
+            </ul>
+        <li><a href="#" class="f">사과</a></li>
+        <li><a href="#" class="f">포도</a></li>
+        <li><a href="#" class="f">수박</a></li>
+    </ul>
+    <ul id="img">
+        <li>사과</li>
+        <li>배</li>
+    </ul>
+    
+</body>
+</html>
