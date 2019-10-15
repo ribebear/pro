@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>예제1</title>
+    <style>
+        .h1{
+            display: table-row;
+        }
+        .h2{
+            display: table-cell;
+            border: 1px solid black;
+            border-top-width: 3px;
+            border-bottom-width: 3px;
+            border-left-width: 3px; 
+            border-right-width: 3px;
+
+        }
+        
+        
+        #h1{
+            display:table-cell;
+            border: 1px solid black;
+            border-radius: 0px 5px 5px 0px;
+        }
+        #h2{
+            display:table-cell;
+            border: 1px solid black
+        }
+        #h3{
+            display:table-cell;
+            border: 1px solid black;
+            border-radius: 5px 0px 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1">
+        <a href=""><div class="h2">메뉴1</div></a>
+        <a href=""><div class="h2">메뉴2</div></a>
+        <a href=""><div class="h2">메뉴3</div></a>
+    </div>
+    <br>
+    <div>
+        <div class="h3" id="h3">메뉴1</div>
+        <div class="h3" id="h2">메뉴2</div>
+        <div class="h3" id="h1">메뉴3</div>
+    </div>
+</body>
+</html>
