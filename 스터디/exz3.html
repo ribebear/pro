@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>백그라운드  예제</title>
+    <style>
+    body{
+        background-image: url(../2일차/cat.jpg);
+        height: 1000px;
+        /* background-attachment 스크롤이 움직일때 배경이미지를 따라 움직이게 할건지 고정으로 할건지를
+        결정하는 속성이다.
+        스크롤 : 스크롤이 내려가면 배경도 같이내려감.
+        fixed : fixed는 배경이 내려가도 처음 이미지 그대로이다. */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: -50px -50px;
+        /* packground-position : 배경이미지의 시작점을 입력하는 속성으로
+        순서는 letf top 순서이며 기본은 0, 0이다.
+        width는 레프트 센터 라이트 값으로 미리 지정되있고
+        height는 높이가 미리 지정되어있다. */
+        background-size: 100%;
+        /* background-size는 배경이미지를 크기 확대하는 속성으로
+        값을 하나만 입력하면 그값은 가로 세로 둘다 적용이 되고
+        값을 두개를 입력하면 각각 width와 height 순서로 값이 적용된다. */
+        /* background : 여러 배경 관련 속성을 그룹화 시킬수있다.
+        background : image repeat position
+         */
+         background: 
+            url(../2일차/cat.jpg) no-repeat 10px 10px,
+            url(../2일차/cat.jpg) no-repeat 100%,;
+            
+    }
+    
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
