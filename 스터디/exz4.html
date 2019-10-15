@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>배경 클리핑과 보정</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            padding: 30px;
+            background: url(../2일차/cat.jpg) repeat;
+        }
+        .bg-clip{
+            /* background-clip 의 content-box는 배경이 보이도록 설정
+            내부여백은 padding로 설정
+            보더박스는 보더를 포함한 박스의 배경의 보이도록 하는 설정
+             */
+            background-clip: content-box;
+        }
+        .bg-or{
+            /*  background-origin일경우에 패딩부분에 이미지를 채우지만
+            background-clip은 이미지를 채우지 않는다. */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-clip"></div>
+    <div class="bg-or"></div>
+</body>
+</html>
