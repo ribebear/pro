@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>복습 예제4</title>
+    <style>
+        .ei::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .ei{
+            width: 200px;
+            background-color: wheat;
+            float: left;
+        }
+        .em{
+            width: 200px;
+            height: calc( 300px / 3 );
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+        }
+        .en{
+            width: 85%;
+            height: 600px;
+            border: 1px solid black;
+            float: right;
+            box-sizing: border-box;
+        }
+        .er{
+            width: 100%;
+            height: 50px;
+            background-color: wheat;
+        }
+        .er::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .et{
+            box-sizing: border-box;
+            float: left;
+            font-size: 30px;
+            line-height: 40px;
+            margin-right: 10px;
+        }
+        input{
+            border-radius: 4px;
+        }
+        .ey{
+            line-height: 40px;
+            float: right;
+            margin-top: 4px ;
+            margin-right: 10px;
+        }
+        input:hover{
+            border-radius: 0px;
+        }
+        .ew{
+            line-height: 40px;
+            float: right;
+            margin-top: 4px ;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="er">
+                <div class="et">로고</div>
+                <div class="et">메뉴1</div>
+                <div class="et">메뉴2</div>
+                <div class="ew"><input type="button" value="검색"></div>
+                <div class="ey"><input type="text" name="" id=""></div>
+            </div>
+            <br>
+        <div class="ei">
+                <div class="em">메뉴1</div>
+                <div class="em">메뉴2</div>
+                <div class="em">메뉴3</div>
+            </div>
+            <div>
+                <div class="en"></div>
+            </div>
+</body>
+</html>

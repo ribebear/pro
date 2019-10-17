@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>복습 예제3</title>
+    <style>
+        .ei::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .ei{
+            width: 200px;
+            background-color: wheat;
+            float: left;
+        }
+        .em{
+            width: 200px;
+            height: calc( 300px / 3 );
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+        }
+        .en{
+            width: 85%;
+            height: 600px;
+            border: 1px solid black;
+            float: right;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ei">
+        <div class="em">메뉴1</div>
+        <div class="em">메뉴2</div>
+        <div class="em">메뉴3</div>
+    </div>
+    <div>
+        <div class="en"></div>
+    </div>
+    
+</body>
+</html>

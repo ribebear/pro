@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>테이블 복습 예제</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td{
+            width: calc(100% / 3);
+        }
+        tr{
+            border-top:1px solid;
+            border-bottom: 1px solid;
+        }
+        tr:nth-last-of-type(5){
+            background-color: white;
+        }
+        tr:nth-last-of-type(2n){
+            background-color: yellow;
+        }
+        tr:hover{
+            background-color: wheat;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>학생이름</td>
+            <td>국어</td>
+            <td>수학</td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>한예찬</td>
+            <td>80</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>박주영</td>
+            <td>75</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>김승현</td>
+            <td>95</td>
+            <td>100</td>
+        </tr>
+    </table>
+</body>
+</html>
