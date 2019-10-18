@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .er{
+            width: 100%;
+            height: 100px;
+            background-color: wheat;
+            border: 1px solid black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .er::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .et{
+            box-sizing: border-box;
+        }
+        .en{
+            width: 100%;
+            height: 2000px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="er">
+        <div class="et"></div>
+        <div class="et"></div>
+        <div class="et"></div>
+    </div>
+        <div class="en"></div>
+</body>
+</html>
