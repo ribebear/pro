@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>네이버 박스</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        /* 헤드와 관련된 css */
+        .header{
+            height: 178px;
+        }
+        .header-top{
+            height: 130px;
+        }
+        .header-bo{
+            height: 48px;
+            border-top: 1px solid /* rgb(241, 243, 246) */;
+            border-bottom: 1px solid /* rgb(209, 216, 218) */;
+        }
+        /* 헤드와 관련된 css */
+        /* 메인과 관련된 css */
+        .main{
+            height: 1466px;
+        }
+        .container{
+            width: 1080px;
+            height: 1466px;
+            margin: 0 auto;
+        }
+        .box-left{
+            width: 740px;
+            height: 1466px;
+            float: left;
+        }
+        .box-right{
+            width: 330px;
+            height: 1466px;
+            float: right;
+        }
+        .box{
+            height: 120px;
+            margin-top: 8px;
+        }
+        .box2{
+            width: 330px;
+            margin-top: 8px;
+        }
+        .left-con1{
+            height: 120px;
+        }
+        .left-con2{
+            height: 46px;
+        }
+        .left-con3{
+            height: 246px;
+        }
+        .left-con4{
+            height: 884px;
+        }
+        .left-con5{
+            height: 130px;
+        }
+        .right-con1{
+            height: 120px;
+        }
+        .right-con2{
+            height: 142px;
+        }
+        .right-con3{
+            height: 150px;
+        }
+        .right-con4{
+            height: 884px;
+        }
+        .right-con5{
+            height: 130px;
+        }
+        /* 메인과 관련된 css */
+        /* 푸터와 관련된 css */
+        .footer{
+            height: 314px;
+            margin-top: 8px;
+        }
+        /* 푸터와 관련된 css */
+        .sd{
+            height: 47px;
+
+        }
+        /* 색 관련 */
+        .bg-white{
+            background-color: white;
+        }
+        .bg-body{
+            background-color: rgb(242, 244, 247);
+        }
+    </style>
+</head>
+<body class="bg-body">
+    <div class="header bg-white">
+        <div class="header-top"></div>
+        <div class="header-bo"></div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="box-left">
+                <div class="left-con1 box bg-white"></div>
+                <div class="left-con2 box bg-white"></div>
+                <div class="left-con3 box bg-white"></div>
+                <div class="left-con4 box bg-white"></div>
+                <div class="left-con5 box bg-white"></div>
+            </div>
+            <div class="box-right">
+                <div class="right-con1 box2 bg-white"></div>
+                <div class="right-con2 box2 bg-white"></div>
+                <div class="right-con3 box2 bg-white"></div>
+                <div class="right-con4 box2 bg-white"></div>
+                <div class="right-con5 box2 bg-white"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    
+</body>
+</html>
