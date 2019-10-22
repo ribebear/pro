@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>그라디언트 예제</title>
+    <style>
+        .g1{
+            height: 300px;
+            background: -webkit-linear-gradient(left, #ff0000 0%, #ffff00 50%, #00ff00 100%);
+        }
+        .g2{
+            height: 300px;
+            background: -webkit-linear-gradient(linear, left, #ff0000 0%, #ffff00 50%, #00ff00 100%)
+            color-stop();
+        }
+        .box{
+            width: 100px;
+            height: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="g1 box"></div>
+    <div class="g2 box"></div>
+    <div class="g3 box"></div>
+    <div class="g4 box"></div>
+</body>
+</html>

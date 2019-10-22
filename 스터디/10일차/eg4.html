@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>그라이언트 예제</title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+        .g::after{
+            display: block;
+            content: 0;
+            clear: both;
+        }
+        .g1{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background:-webkit-linear-gradient(left top, #ff0000 0%, #ffff00 50%, #00ff00 100%)
+        }
+        .g2{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background:-webkit-linear-gradient(right top, #ff0000 0%, #ffff00 50%, #00ff00 100%)
+        }
+        .g5::after{
+            display: block;
+            content: 0;
+            clear: both;
+        }
+        .g3{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background:-webkit-linear-gradient(left bottom, #ff0000 0%, #ffff00 50%, #00ff00 100%)
+        }
+        .g4{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background:-webkit-linear-gradient(right bottom, #ff0000 0%, #ffff00 50%, #00ff00 100%)
+        }
+        .s2{
+            width: 300px;
+            height: 300px;
+            background:-webkit-radial-gradient(center, ellipse cover, #FF0000 0%, #ffff00 50%, #00ff00 100%)
+        }
+    </style>
+</head>
+<body>
+        <div class="g">
+            <div class="g1"></div>
+            <div class="g2"></div>
+        </div>
+        <div class="g5">
+            <div class="g3"></div>
+            <div class="g4"></div>
+        </div>
+        <div class="s2"></div>
+</body>
+</html>
