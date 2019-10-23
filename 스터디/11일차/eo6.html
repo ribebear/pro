@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>필터 효과 예제</title>
+    <style>
+         /* filter : 앞에서 배운 opacity, box:shadow와 같은 속성들이
+         브라우저별 또는 버전별로 적용되지 않을 수 있는데 이때 적용하기 위한
+         방벙이 filter이다. */
+        .blur img{
+            /* blur : px값이 높아질수록 많이 흐려짐. */
+            filter:blur(4px);
+        }
+        .bri img{
+            /* brughtbess : %가 낮을수록 어두워지고, 100%는 원본 100%가 넘으면 이미지가
+            밝아진다. */
+            filter: brightness(50%);
+        }
+        .con img{
+            filter: contrast(200%);
+            /* contrast : 대조 속성으로 100% 원본 %가 높을수록 색과 색의 구별이 낮아진다. */
+        }
+    </style>
+</head>
+<body>
+    <p class="blur"><img src="../2일차/cat.jpg" alt=""></p>
+    <p class="bri"><img src="../2일차/cat.jpg" alt=""></p>
+    <p class="con"><img src="../2일차/cat.jpg" alt=""></p>
+    <p class="blur"><img src="../2일차/cat.jpg" alt=""></p>
+</body>
+</html>
