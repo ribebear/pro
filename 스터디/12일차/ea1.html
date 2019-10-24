@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* p. 431 기준으로 화면 구성 예제
+        @media를 쓰지 않는 화면은 1200px이상 */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .con::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+        .box{
+            width: calc(100% / 5);
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+        /* 장치에 가로 화면을 기준으로 반응형을 적용 */
+        @media screen and (max-width:1200px) {
+            .box
+            { 
+                width: calc(100% / 4);
+                background-color: red;
+                }
+            }
+        @media screen and (max-width:980px) {
+            .box{ 
+                width: calc(100% / 3);
+                background-color: red;
+                }
+        @media screen and (max-width:768px) {
+            .box{ 
+                width: calc(100% / 2);
+                background-color: red;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
