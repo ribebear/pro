@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .d2{
+            height: 700px;
+            border: 2px solid red;
+        }
+        @media screen and (min-width: 1000px){
+            .b2{
+                width: 1000px;
+                margin: 0 auto;
+            }
+        }
+        .d1{
+            height: 700px;
+            border: 2px solid blue;
+        }
+        @media screen and (max-width: 999px){
+            .b1{
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d2"></div>
+    <div class="d1"></div>
+</body>
+</html>
