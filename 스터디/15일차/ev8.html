@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오버 플로우 예제</title>
+    <style>
+        .pa{
+            width: 300px;
+            border: 1px solid black;
+            /* 
+            overflow 속성은 자식이 부모를 벗어나는 크기를 가질 때 처리하는 속성
+            hidden : 넘어가는 내용들을 가린다.
+            auto : 내용이 넘어가면 스크롤을 생성하고, 넘어가지 않으면 스크롤이 생성하지 않는다.
+            scroll : 무조건 스크롤을 생성한다.
+            visible : 자식의 넘어가는 내용이 보이도록 한다. 기본값
+             */
+            height: 50px;
+            overflow: visible;
+        }
+        .ps{
+            width: 400px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pa">
+        <div class="ps">이날 김숙은 “내가 아는 사람 중에 제일 부자 오빠는 서장훈”이라며 “함연지가 더 부자인 거 아니냐”고 궁금해했다. 김구라는 “함연지는 그릇이 다르다. 서장훈은 자수성가고 함연지는 재벌 라인”이라고 말했다. 
+
+                궁금증을 높이는 가운데 함연지는 “뭐라고 해야 할지 모르겠다. (이런 질문을 받으면) 대답하지 않는다”고 쑥스러워했다. 이에 김숙은 “서장훈처럼 ‘나 2조 있어’라고 하는 것 어떠냐”고 조언했다. 김구라는 “서장훈은 실제로 2조가 없기 때문에 가만히 있지만 함연지는 진짜 있을 수도 있다”고 추측해 웃음을 자아냈다.
+                </div>
+    </div>
+</body>
+</html>
