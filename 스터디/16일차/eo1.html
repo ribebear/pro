@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>조건문</title>
+    <script>
+    /* 
+    조건문은 조건에 미리 결과가 달라지는 상황에서 사용하는 문법
+    - 조건문의 종류 : lf문, switch문
+    - ~하면 ...한다.
+    - ~ : 조건식, ... : 실행문 
+    if문은
+    //조건식 1이 참이면 실행문1을 실행해라
+    if(조건식1){
+        실행문1;
+    }
+    //조건식1이 거짓이고 조건식2가 참이면 실행문2를 실행해라.
+    else if(조건식2){
+        실행문2;
+    }
+    //else : 현재 위치에서 위에 있는 조건식들이 거짓이면
+    // 조건식1과 조건식2가 거짓이면 실행문3을 실행해라
+    //else는 eles가 있다면 if문 무조건 마지막에 와야한다.
+    //else 옆에는 ()가 올 수 없다.
+    else{
+        실행문3;
+    }
+    */
+    /* 변수 num가 짝수이면 짝수라고 출력하는 예제,
+    홀수이면 아무것도 안함.
+    num가 짝수 => num가 2의 배수
+     => num가 2로 나누어떨어진다.
+     => num를 2로 (나누었을 때 나머지)가 0과 (같다.)
+        num 2 % 0 ==
+        num % 2 == 0 
+    */
+    var num = 3;
+    if(num % 2 == 0){
+        console.log('', num, '는 짝수');
+    }
+    else{
+        console.log('', num, '는 홀수');
+    }
+    /* 
+    성적에 따른 학점을 출력하는 예제
+    90 <= score <= 100 : A
+    80 <= score <= 90 : B
+    70 <= score <= 80 : C
+    60 <= score <= 70 : D
+    0 <= score <= 60 : F
+    score가 90이상이고 100이하이면 A라고 출력
+    1. 조건식과 실행문으로 나눈다.
+    조건식 : score가 90이상이고 100이하이다.
+    실행문 : A라고 출력
+    2. 조건식을 풀어쓴 뒤 코드로 바꾼다.
+    score가 90이상이고 100이하이다
+     => score가 90보다 (크거나 같)(고) score가 100보다 (작거나 같다).
+     => score 90 >= && ㄴ책ㄷ 100 <=
+     => score >= 90 && score <= 100
+    */
+    var score = 200;
+    if(score >= 90 && score <= 100){
+        console.log('', score, '점은 A입니다.');
+    }
+    else if(score >= 80 && score <= 90){
+        console.log('', score, '점은 B입니다.')
+    }
+    else if(score >= 70 && score <= 80){
+        console.log('', score, '점은 C입니다.')
+    }
+    else if(score >= 60 && score <= 70){
+        console.log('', score, '점은 D입니다.')
+    }
+    else if(score >= 0 && score <= 60){
+        console.log('', score, '점은 F입니다.')
+    }
+    else{
+        console.log('성적이 잘못되었습니다.')
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
